@@ -1,19 +1,29 @@
 def my_select(collection)
- 
+ i = 0
+ arr = []
+ if collection.size > 0 
+   while i < collection.size
+   if yield(collection[i])
+     arr << collection[i]
+   end
+   i += 1
+ end
+ else puts "Empty collection"
 end
 
-def hello_t(array)
-  if block_given?
-    i = 0
- 
-    while i < array.length
-      yield(array[i])
-      i = i + 1
+def my_select(collection)
+   i = 0
+    new_arr = []
+      if collection.length > 0
+      while i < collection.length
+       if yield(collection[i])
+       new_arr << collection[i]
+     end
+       i+=1
+     end
+   else
+    puts "Empty collection"
+   end
+   new_arr
     end
- 
-    array
-  else
-    puts "Hey! No block was given!"
-  end
-end
 # call your method here!
