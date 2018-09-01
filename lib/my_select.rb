@@ -1,3 +1,3 @@
-def my_select(collection)
+def my_select(bum)
  
 end
