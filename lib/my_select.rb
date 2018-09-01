@@ -7,8 +7,6 @@ def my_select(collection)
      arr << collection[i]
    end
    i += 1
- end
- else puts "Ecollection"
 end
 arr
 end
