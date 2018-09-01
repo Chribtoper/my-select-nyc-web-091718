@@ -8,7 +8,7 @@ def my_select(collection)
    end
    i += 1
  end
- else puts "Empty collection"
+ else puts "Ecollection"
 end
 arr
 end
